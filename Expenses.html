@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+        <title>Внутрифинансовые расходы</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>«Внутрифинансовые расходы»</h1>
+        </header>
+
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="order.html">Покупка</a></li>
+                <li class="dropdown">
+                    <a href="#">Таблицы</a>
+                    <div class="dropdown-content">
+                        <a href="Departmenti.html">Отделы</a>
+                        <a href="Expenses.html">Расходы</a>
+                        <a href="Types_of_expenses.html">Виды расходов</a>
+                    </div>
+                </li>
+                <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <nav class="vertical-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html">Покупка</a></li>
+                    <li class="dropdown">
+                        <a href="#">Таблицы</a>
+                        <div class="dropdown-content">
+                            <a href="Departmenti.html">Отделы</a>
+                            <a href="Expenses.html">Расходы</a>
+                            <a href="Types_of_expenses.html">Виды расходов</a>
+                        </div>
+                    </li>
+                    <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+                </ul>
+            </nav>
+
+            <main class="content">
+            
+
+                <h2>Расходы</h2>
+                
+                <table class="department-table">
+                    <tr>
+                        <th>Код расхода</th>
+                        <th>Код типа</th>
+                        <th>Код отдела</th>
+                        <th>Сумма</th>
+                        <th>Дата</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>300</td>
+                        <td>06.10.2024</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>200</td>
+                        <td>11.10.2024</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>500</td>
+                        <td>01.08.2024</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>22.03.2024</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>5000</td>
+                        <td>19.12.2024</td>
+                    </tr>
+                </table>
+
+            </main>
+        </div>
+        <footer>
+            &copy; <strong><em>Бухгалтерия рулит</em></strong>
+            <button class="scroll-to-top" onclick="scrollToTop()">Наверх</button>
+            <button id="logout-btn" class="logout-button">Выйти</button>
+        </footer>
+            <script>
+                function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+                document.getElementById('logout-btn').addEventListener('click', () => {
+                window.location.href = 'AuthPage.html';
+                });
+            </script>
+    </section> 
+</body>
+</html>
